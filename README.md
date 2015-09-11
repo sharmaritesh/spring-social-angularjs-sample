@@ -4,5 +4,6 @@ By default it comes with Facebook and Twitter integration and can be extended to
 
 To run :
 You need to register you app to respective social network and add the appId and secret in application.yml
+http://localhost:6080/ssa/index.html#/
 
 Note of caution : I'am not good with AngularJS.
