@@ -1,0 +1,14 @@
+<div ng-cloak>
+	<h3>Your Connections</h3>
+	
+	<div ng-repeat="connection in socialConnections">
+		<div><span><h4>{{connection.provider}}</h4></span></div>
+		<div ng-if="connection.configured">
+			<span>You are connected to {{connection.provider}} as <a href="" ng-click="manageConnection(connection.provider)"><strong>{{connection.displayName}}</strong></a></span>
+		</div>
+		<div ng-if="!connection.configured">
+			You are not yet connected to {{connection.provider}}. Click <a href="" ng-click="redirectToSocialConnectPage(connection.provider)">here</a> to configure {{connection.provider}} connection.
+		</div>
+		<br/>
+	</div>
+</div>

@@ -1,0 +1,14 @@
+<div id="content" layout:fragment="content">
+	<h5>{{message}}</h5>
+	<h4>Post a tweet</h4>
+	<form name="form" role="form" novalidate ng-submit="postTweet()" show-validation>
+		<textarea name="tweet" rows="2" cols="80" ng-model="tweet" ng-minlength=5 ng-maxlength=140 required></textarea>
+		<br /> <input type="submit" value="Post Tweet" />
+	</form>
+	
+	<br/><br/>
+	Your Tweets<br/>
+	<div ng-repeat="tweet in tweets">
+		{{tweet.text}}
+	</div>
+</div>

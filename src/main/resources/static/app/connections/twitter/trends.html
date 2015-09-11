@@ -1,0 +1,6 @@
+<h3>Daily Twitter Trends</h3>
+
+<span ng-repeat="trend in trends"> 
+	<a href="@{'/twitter/search?query=' + ${trend.query}">{{trend.name}}</a> 
+	<br />
+</span>

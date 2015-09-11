@@ -1,0 +1,16 @@
+<br />
+<div id="content">
+	<h3>Your Twitter Profile</h3>
+	<p>{{message}}</p>
+	<p>
+		Hello, <span ng-bind="profile.name">name</span>!
+	</p>
+	<img src="{{profile.profileImageUrl}}" />
+	<div>
+		<span>Twitter ID:</span><span ng-bind="profile.id">profile id</span><br/>
+		<span>Screen name:</span><span><a href="{{profile.profileUrl}}" target="_blank">{{profile.screenName}}</a></span><br/>
+		<span>Description:</span><span ng-bind="{{profile.description}}">Description not available</span><br/>
+		<span>Location:</span><span ng-bind="{{profile.location}}">Location not available</span><br/>
+		<span>URL:</span><span><a href="{{profile.url}}" ng-bind="{{profile.url}}">profile url</a></span>
+	</div>
+</div>

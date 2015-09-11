@@ -1,0 +1,13 @@
+<h3>Your Facebook Albums</h3>
+
+<ul>
+	<li ng-repeat="album in albums">
+		<a ng-click="loadAlbum(album.id)">{{album.name}}</a>
+	</li>
+</ul>
+
+<span ng-if="photos">
+  Photos in album<br />
+		<img ng-repeat="photo in photos" ng-src="{{photo.source | trusted}}" />
+		<br />
+</span>

@@ -1,0 +1,16 @@
+<br />
+<div id="content">
+	<h3>Your Facebook Profile</h3>
+	<p>{{message}}</p>
+	<p>
+		Hello, <span ng-bind="profile.name">name</span>!
+	</p>
+	<img src="{{profile.profileImageUrl}}" />
+	<div>
+		<span>Facebook ID:</span><span ng-bind="profile.id">profile id</span><br/>
+		<span>Email:</span><span ng-bind="{{profile.email}}">Email not available</span><br/>
+		<span>Gender:</span><span ng-bind="{{profile.gender}}">Gender not available</span><br/>
+		<span>Description:</span><span ng-bind="{{profile.about}}">Description not available</span><br/>
+		<span>Location:</span><span ng-bind="{{profile.location}}">Location not available</span><br/>
+	</div>
+</div>
